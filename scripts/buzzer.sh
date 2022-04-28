@@ -5,6 +5,12 @@
 
 # Astra DB's Build-A-Thon by DataStax and AngelHack
 
+
+if [ $# -eq 0 ] ; then
+   echo "ERROR: No arguments supplied!"
+   exit 7
+fi
+
 # initializing the buzzer on GPIO22 (BCM 6)
 function buzzer_init {
              if [ ! -f /sys/class/gpio/gpio6/direction ] ; then
