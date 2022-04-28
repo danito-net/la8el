@@ -5,10 +5,7 @@
 
 # Astra DB's Build-A-Thon by DataStax and AngelHack
 
-timestamp=$(date '+%Y-%m-%d %H:%M:%S %Z')
-epoch=$(date -d "$timestamp" +"%s")
-
-# initializing the buzzer on GPIO6
+# initializing the buzzer on GPIO22 (BCM 6)
 function buzzer_init {
              if [ ! -f /sys/class/gpio/gpio6/direction ] ; then
                 sudo echo 6 > /sys/class/gpio/export
