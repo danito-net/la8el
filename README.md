@@ -78,3 +78,172 @@ Using the "terminal" application give the following command:
     sudo python3 raspi-blinka.py
     sudo pip3 install adafruit-circuitpython-rgb-display
     
+#### 1.9. Install basic tools for software development ####
+
+Using the "terminal" application give the following commands:
+
+    sudo apt install libssl-dev
+    sudo apt install autoconf
+    sudo apt install libtool
+    sudo apt install uuid-dev
+    sudo apt install ninja-build
+    sudo apt install lrzip 
+
+or in just one line command:
+
+    sudo apt install libssl-dev autoconf libtool uuid-dev ninja-build lrzip
+
+and then do a `ldconfig` command:
+
+    sudo ldconfig
+
+
+#### 1.10. Compile and install the latest "CMake" tools ####
+
+Using the "terminal" application give the following commands:
+
+    cd ~
+    git clone https://github.com/Kitware/CMake.git
+    cd CMake
+    ./bootstrap
+    make
+    sudo make install
+    sudo ldconfig
+
+
+#### 1.11. Compile and install the latest ImageMagick ####
+
+ImageMagick is a tools for image processing and converting purposes. Using the "terminal" application give the following commands:
+
+    cd ~
+    git clone https://github.com/ImageMagick/ImageMagick.git
+    cd ImageMagick
+    ./configure
+    make
+    sudo make install
+    sudo ldconfig
+
+
+#### 1.12. Compile and install the latest "zlib" library ####
+
+Using the "terminal" application give the following commands:
+
+    cd ~
+    wget https://zlib.net/zlib-1.2.12.tar.gz
+    tar xvzf zlib-1.2.12.tar.gz
+    cd zlib-1.2.11
+    ./configure
+    cmake .
+    make
+    sudo make install
+    sudo ldconfig
+
+
+#### 1.13. Compile and install the latest "libpng" library  ####
+
+Using the "terminal" application give the following commands:
+
+    cd ~
+    wget https://nchc.dl.sourceforge.net/project/libpng/libpng16/1.6.37/libpng-1.6.37.tar.gz
+    tar xvzf libpng-1.6.37.tar.gz
+    cd libpng-1.6.37
+    ./configure
+    make
+    sudo make install
+    sudo ldconfig
+
+#### 1.14. Compile and install the latest "tiff" library  ####
+
+Using the "terminal" application give the following commands:
+
+    cd ~
+    wget http://download.osgeo.org/libtiff/tiff-4.3.0.tar.gz
+    tar xvzf tiff-4.3.0.tar.gz
+    cd tiff-4.3.0
+    ./configure
+    make
+    sudo make install
+
+
+#### 1.15. Compile and install the latest "jpeg-9d" library  ####
+
+Using the "terminal" application give the following commands:
+
+    cd ~
+    wget https://www.ijg.org/files/jpegsrc.v9d.tar.gz
+    tar xvzf jpegsrc.v9d.tar.gz
+    cd jpeg-9d/
+    ./configure
+    make
+    sudo make install
+    sudo ldconfig
+
+
+#### 1.16. Compile and install the latest "jbigkit" library  ####
+
+Using the "terminal" application give the following commands:
+
+    cd ~
+    wget https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.1.tar.gz
+    tar xvzf jbigkit-2.1.tar.gz
+    cd jbigkit-2.1
+    make
+
+
+#### 1.17. Install the "lzma-dev" and "liblzma-dev" libraries ####
+
+Using the "terminal" application give the following commands:
+
+    cd ~
+    sudo apt install lzma-dev liblzma-dev
+
+
+#### 1.18. Compile and install "jabcode" from my repository ####
+
+Using the "terminal" application give the following commands:
+
+    cd ~
+    git clone https://github.com/danito-net/jabcode.git
+    cd jabcode/src/jabcode/lib
+    mkdir BAK
+    mv *.a BAK/
+    sudo cp /usr/local/lib/libz.a .
+    sudo cp /usr/local/lib/libpng16.a .
+    sudo cp /usr/local/lib/libtiff.a .
+    sudo cp /usr/local/lib/libjpeg.a .
+    sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a . 
+    cp ~/jbigkit-2.1/libjbig/libjbig.a .
+    sudo chown -R pi.pi ~/*
+    cd ..
+    make
+    cd ../jabcodeWriter
+    make
+    cp bin/jabcodeWriter ~/
+    cd ../jabcodeReader
+    make
+    cp bin/jabcodeReader ~/
+    cd ~
+
+
+#### 1.19. Testing the `jabcodeWriter` and `jabcodeReader` ####
+
+To create a jabcode image do the following command:
+
+    ~/jabcode/src/jabcodeWriter/bin/jabcodeWriter --input "Astra DB's Build-A-Thon by DataStax and AngelHack" --output message.png
+
+To read a jabcode image do the following command:
+
+    ~/jabcode/src/jabcodeReader/bin/jabcodeReader message.png
+
+Because we already copying the executable binary file to user "pi" home directory, simply do from user pi home directory (using command `cd ~`) the following commands:
+
+To create a jabcode image do the following command:
+
+    ./jabcodeWriter --input "Astra DB's Build-A-Thon by DataStax and AngelHack" --output message.png
+
+To read a jabcode image do the following command:
+
+    ./jabcodeReader message.png
+
+Android smartphone can install JabCode application from my GitHub repository : [JabCode Reader for Android ](https://github.com/danito-net/jabcode/blob/master/android_reader/JabCodeApp.apk)
+
