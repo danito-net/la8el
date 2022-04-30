@@ -66,3 +66,15 @@ Using the "terminal" application give the following command:
 When installation finished, please disable the screensaver also disable blank / sleep-mode display:
 
 Menu > Preferences > Screensaver > Display Modes tab > Mode > Disable Screen Save
+
+
+#### 1.8. Install RasPi Blinka from AdaFruit (for OLED 240x240) ####
+
+Using the "terminal" application give the following command:
+
+    sudo pip3 install --upgrade setuptools
+    sudo pip3 install --upgrade adafruit-python-shell
+    wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py
+    sudo python3 raspi-blinka.py
+    sudo pip3 install adafruit-circuitpython-rgb-display
+    
