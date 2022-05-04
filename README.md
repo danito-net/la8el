@@ -1,9 +1,9 @@
 # la8el
 The la8el is a physical & digital labelling system for global supply chain industry solution; this repository is to complete the requirements for (Astra DB's Build-A-Thon)[https://buildathonhack.com/] hackathon submission.
 
-The (Apache Cassandra)[https://cassandra.apache.org/] is the ideal choice as a backend database for apps that need scale. Aside from offering high performance and reliability, Cassandra’s architecture makes it possible to scale horizontally to handle very high loads.  Since (Astra DB)[https://astra.datastax.com/] simplifies cloud-native Cassandra application development, when you combine IoT / Internet-of-Things system with Astra DB you get all the benefits of Cassandra with the flexibility of a multi-cloud, serverless database-as-a-service (DBaaS).
+The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a backend database for apps that need scale. Aside from offering high performance and reliability, Cassandra’s architecture makes it possible to scale horizontally to handle very high loads.  Since [Astra DB](https://astra.datastax.com/) simplifies cloud-native Cassandra application development, when you combine IoT / Internet-of-Things system with Astra DB you get all the benefits of Cassandra with the flexibility of a multi-cloud, serverless database-as-a-service (DBaaS).
 
-We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a free (Astra DB)[https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l] account that will give you 80 GB monthly to work with (credit card information is not needed).
+We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a free [Astra DB](https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l) account that will give you 80 GB monthly to work with (credit card information is not needed).
 
 The la8el's device prototype are two types:
 1. la8el anchor device, using ESP32 microcontroller as a controlling unit
