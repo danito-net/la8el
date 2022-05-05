@@ -1,5 +1,5 @@
 # la8el
-The la8el is a physical & digital labelling system for global supply chain industry solution; this repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) hackathon submission.
+The la8el (pronounced as "label with 8 colors" or "label with 8" or just simply "label") is a physical & digital labelling system for global supply chain industry solution; this repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) hackathon submission.
 
 The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a backend database for apps that need scale. Aside from offering high performance and reliability, Cassandra’s architecture makes it possible to scale horizontally to handle very high loads.  Since [Astra DB](https://astra.datastax.com/) simplifies cloud-native Cassandra application development, when you combine IoT / Internet-of-Things system with Astra DB you get all the benefits of Cassandra with the flexibility of a multi-cloud, serverless database-as-a-service (DBaaS).
 
