@@ -5,7 +5,7 @@ The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a b
 
 We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a free [Astra DB](https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l) account that will give you 80 GB monthly to work with (credit card information is not needed).
 
-The la8el's device prototype are two types:
+There are two types of la8el's device prototype:
 1. la8el anchor device, using ESP32 microcontroller as a controlling unit
 2. la8el tag device, using Raspberry Pi Zero 2 W as a computing / processing unit and as a digital label display
 
