@@ -1,4 +1,7 @@
 # la8el - The Phygital Labeling System
+
+![la8el's logo](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el.jpg)
+
 The la8el wrote with "8" / eight number at the middle; pronounced as "label with 8" or just simply as "label" as usual. This repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) Round-3 hackathon submission.
 
 The la8el is a "phygital" (phygital = physical + digital) labeling system that uses compressed and encrypted JAB-Code as a replacement for regular QR-Code to extend the data capacity and security ; using Astra DB as a bridge to Ultra Wide-Band technology for indoor 'GPS' asset tracking
