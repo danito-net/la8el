@@ -11,9 +11,9 @@ The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a b
 We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a [free Astra DB account](https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l) that will give you 80 GB monthly to work with (credit card information is not needed).
 
 There are three types of la8el's device prototype for labeling system:
-1. la8el JAB-Code reader, using Raspberry Pi Compute Module 4 CM4 8GB for computing / processing unit, equipped with high resolution auto-focus camera
-2. la8el anchor device (4 units); using ESP32 micro controller for controlling unit, equipped with DecaWave Module DWM1000  (as a 'satellites' for indoor positioning system / asset tracking)
-3. la8el tag device, using Raspberry Pi Zero 2 W for computing / processing unit, equipped with DecaWave Module DWM1000 (as an IoT based digital label display)
+1. la8el JAB-Code reader, using Raspberry Pi Compute Module 4 CM4 8GB for computing / processing unit, equipped with a high resolution auto-focus camera
+2. la8el anchor device (4 units); using ESP32 micro controller for controlling unit, equipped with a DecaWave Module DWM1000; these units is a 'satellites' for indoor positioning system / asset tracking
+3. la8el tag device, using Raspberry Pi Zero 2 W for computing / processing unit, also equipped with a DecaWave Module DWM1000; this unit is an IoT based digital label display
 
 
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag device prototype:
