@@ -1,15 +1,16 @@
 # la8el
-The la8el (wrote with "8" / eight number at the middle; pronounced as "label with 8 colors" or "label with 8" or just simply as "label" as usual) is a physical & digital labelling system for global supply chain industry solution; this repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) hackathon submission.
+The la8el (wrote with "8" / eight number at the middle; pronounced as "label with 8" or just simply as "label" as usual) is a physical & digital labelling system for global supply chain industry solution; this repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) hackathon submission.
 
 The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a backend database for apps that need scale. Aside from offering high performance and reliability, Cassandra’s architecture makes it possible to scale horizontally to handle very high loads.  Since [Astra DB](https://astra.datastax.com/) simplifies cloud-native Cassandra application development, when you combine the IoT / Internet-of-Things system with Astra DB you get all the benefits of Cassandra with the flexibility of a multi-cloud, serverless database-as-a-service (DBaaS).
 
-We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a free [Astra DB](https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l) account that will give you 80 GB monthly to work with (credit card information is not needed).
+We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a [Astra DB](https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l) free account that will give you 80 GB monthly to work with (credit card information is not needed).
 
-There are two types of la8el's device prototype:
-1. la8el anchor device, using ESP32 microcontroller as a controlling unit
-2. la8el tag device, using Raspberry Pi Zero 2 W as a computing / processing unit and as a digital label display
+There are three types of la8el's device prototype:
+1. la8el JAB-Code reader on conveyor belt, using Raspberry Pi CM4 8GB
+2. la8el anchor device, using ESP32 microcontroller as a controlling unit
+3. la8el tag device, using Raspberry Pi Zero 2 W as a computing / processing unit and as a digital label display
 
-Please follow these steps to prepare the working label tag device prototype:
+Please follow these steps to prepare the working la8el JAB-Code reader and label tag device prototype:
 
 #### 1.1. Install the latest "Raspberry Pi Imager" application ####
 
