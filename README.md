@@ -1,14 +1,17 @@
 # la8el - The Phygital Labeling System
-The la8el (wrote with "8" / eight number at the middle; pronounced as "label with 8" or just simply as "label" as usual) is a physical & digital labeling system for global supply chain industry solution; this repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) Round-3 hackathon submission.
+The la8el wrote with "8" / eight number at the middle; pronounced as "label with 8" or just simply as "label" as usual. This repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) Round-3 hackathon submission.
+
+The la8el is a "phygital" (phygital = physical + digital) labeling system that uses compressed and encrypted JAB-Code as a replacement for regular QR-Code to extend the data capacity and security ; using Astra DB as a bridge to Ultra Wide-Band technology for indoor 'GPS' asset tracking
 
 The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a backend database for apps that need scale. Aside from offering high performance and reliability, Cassandra’s architecture makes it possible to scale horizontally to handle very high loads.  Since **Astra DB** simplifies cloud-native Cassandra application development, when you combine the IoT / Internet-of-Things system with Astra DB you get all the benefits of Cassandra with the flexibility of a multi-cloud, serverless database-as-a-service (DBaaS).
 
 We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a [free Astra DB account](https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l) that will give you 80 GB monthly to work with (credit card information is not needed).
 
-There are three types of la8el's device prototype:
-1. la8el JAB-Code reader on conveyor belt, using Raspberry Pi CM4 8GB
-2. la8el anchor device, using ESP32 microcontroller as a controlling unit
-3. la8el tag device, using Raspberry Pi Zero 2 W as a computing / processing unit and as a digital label display
+There are three types of la8el's device prototype for labeling system:
+1. la8el JAB-Code reader, using Raspberry Pi Compute Module 4 CM4 8GB for computing / processing unit, equipped with high resolution auto-focus camera
+2. la8el anchor device (4 units); using ESP32 micro controller for controlling unit, equipped with DecaWave Module DWM1000  (as a 'satellites' for indoor positioning system / asset tracking)
+3. la8el tag device, using Raspberry Pi Zero 2 W for computing / processing unit, equipped with DecaWave Module DWM1000 (as an IoT based digital label display)
+
 
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag device prototype:
 
