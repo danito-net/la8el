@@ -97,7 +97,7 @@ void setup() {
      Serial.print(" The ESP32 microcontroller's MAC Address: ");
      Serial.println(str_mac_address);
      
-     String str_ip_address = WiFi.localIP();
+     String str_ip_address = WiFi.localIP().toString();
      Serial.print(" The ESP32 microcontroller's IP Address: ");
      Serial.println(str_ip_address);
 
