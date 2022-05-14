@@ -522,7 +522,7 @@ void newRange() {
                    str_current_hour + ":" + 
                    str_current_minute + ":" + 
                    str_current_second + " | " +
-                   str_short_id + " " + 
+                   str_short_id + " | " + 
                    str_range + " m | " + 
                    str_power + " dBm |");
 
