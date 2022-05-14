@@ -39,7 +39,7 @@ const String long_id = "A5:71:2A:DB:DA:A0:01";
 // A5:71:2A:DB = ASTRADB
 // DA = DataStax + AngleHack
 // A0:01 = Anchor-001 
-// The "A" prefix is for anchors devices and "F" for tags one
+// The "A" prefix is for the anchors devices and "F" for the tags one
 
 // I live in Cimahi, a beautiful city at western of Java island; the device has been placed there
 // The western Indonesia time (WIB) is +0700 so the time offset become 7 * 60 * 60 = 25200
@@ -96,10 +96,15 @@ void setup() {
      String str_mac_address = WiFi.macAddress();
      Serial.print(" The ESP32 microcontroller's MAC Address: ");
      Serial.println(str_mac_address);
+     
+     String str_ip_address = WiFi.localIP();
+     Serial.print(" The ESP32 microcontroller's IP Address: ");
+     Serial.println(str_ip_address);
+
      char chr_mac_address[str_mac_address.length() + 1];
      str_mac_address.toCharArray(chr_mac_address, str_mac_address.length() + 1);
 
-     // SQUID GEN = simple & quick UUID generator!
+     // SQUID-GEN = simple & quick UUID generator!
      // f071d8ee-f051-83c8-1c33-6abdda41488f
      // 12345678-1234-1234-1234-123456789012
      String str_uuid = String(random(0xffff), HEX) + String(random(0xffff), HEX) + "-" + 
@@ -107,8 +112,6 @@ void setup() {
                        String(random(0xffff), HEX) + "-" + 
                        String(random(0xffff), HEX) + "-" + 
                        String(random(0xffff), HEX) + String(random(0xffff), HEX) + String(random(0xffff), HEX) ;
-
-     Serial.println(str_uuid);
 
      char chr_uuid[str_uuid.length() + 1];
      str_uuid.toCharArray(chr_uuid, str_uuid.length() + 1);
