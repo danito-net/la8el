@@ -332,16 +332,6 @@ void loop() {
 
 void newRange() {
 
-     String str_short_id = String(DW1000Ranging.getDistantDevice()->getShortAddress(), HEX);
-     String str_range = String(DW1000Ranging.getDistantDevice()->getRange() * calibration_range);
-     String str_power = String(DW1000Ranging.getDistantDevice()->getRXPower());
-
-     String str_message = str_short_id + " " + str_range + " " + str_power;
-     char chr_message[str_message.length() + 1];
-     str_message.toCharArray(chr_message, str_message.length() + 1);
-
-     Serial.println(str_message);
-
      String str_mac_address = WiFi.macAddress();
 
      char chr_mac_address[str_mac_address.length() + 1];
@@ -434,7 +424,7 @@ void newRange() {
      int val_fra_calibration_range = (int)val_float_calibration_range;
      sprintf (chr_tag_calibration_range, "%d.%d", val_int_calibration_range, val_fra_calibration_range);
 
-     float tag_latitude = -1.111111; 
+     float tag_latitude = -1.111111;
      String str_tag_latitude = String(tag_latitude);
      char chr_tag_latitude[str_tag_latitude.length() + 1] = {' '};
      int val_int_tag_latitude = (int) tag_latitude;
@@ -481,9 +471,16 @@ void newRange() {
      char chr_tag_azimuth[str_tag_azimuth.length() + 1];
      str_tag_azimuth.toCharArray(chr_tag_azimuth, str_tag_azimuth.length() + 1);
 
+     String str_short_id = String(DW1000Ranging.getDistantDevice()->getShortAddress(), HEX);
+     String str_range = String(DW1000Ranging.getDistantDevice()->getRange() * calibration_range);
+     String str_power = String(DW1000Ranging.getDistantDevice()->getRXPower());
 
-     char chr_note[str_message.length() + 1];
-     str_message.toCharArray(chr_note, str_message.length() + 1);
+     String str_message = str_short_id + " " + 
+                          str_range + " " + 
+                          str_power;
+
+     char chr_message[str_message.length() + 1];
+     str_message.toCharArray(chr_message, str_message.length() + 1);
 
 
      // Lets sets status of the tag
@@ -518,16 +515,15 @@ void newRange() {
      };
 
      client.addRow(astra_db_keyspace, tags_log_table, 22, tags_log_columns);
-     
-}
 
-void newDevice(DW1000Device* device) {
-  Serial.print(" ranging init; 1 device added ! -> ");
-  Serial.print(" short:");
-  Serial.println(device->getShortAddress(), HEX);
-}
+     Serial.println("| " + str_current_year + "-" +
+                   str_current_month + "-" + 
+                   str_current_date + " " + 
+                   str_current_hour + ":" + 
+                   str_current_minute + ":" + 
+                   str_current_second + " | " +
+                   str_short_id + " " + 
+                   str_range + " m | " + 
+                   str_power + " dBm |");
 
-void inactiveDevice(DW1000Device* device) {
-     Serial.print(" Inactive device: ");
-     Serial.println(device->getShortAddress(), HEX);
 }
