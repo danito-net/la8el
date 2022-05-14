@@ -1,3 +1,7 @@
+USE la8el ;
+
+DROP TABLE IF EXISTS anchors ;
+
 CREATE TABLE IF NOT EXISTS anchors (long_id text, 
                                     mac_address text, 
                                     short_id text, 
@@ -14,6 +18,8 @@ CREATE TABLE IF NOT EXISTS anchors (long_id text,
                                     note text, 
                                     status tinyint, 
                                     PRIMARY KEY (long_id, mac_address)) ;
+
+DROP TABLE IF EXISTS anchors_log ;
 
 CREATE TABLE IF NOT EXISTS anchors_log (id uuid,
                                        long_id text, 
