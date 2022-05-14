@@ -359,12 +359,7 @@ void newRange() {
      char chr_uuid[str_uuid.length() + 1];
      str_uuid.toCharArray(chr_uuid, str_uuid.length() + 1);
 
-//     client.logger->setLevel(LEVEL_INFO);
      client.logger->setLevel(LEVEL_ERROR);
-     client.connect(astra_db_id, astra_db_region, astra_db_client_id, astra_db_client_secret);
-
-     time_client.begin();
-     time_client.setTimeOffset(wib_to);
 
      char chr_long_id[long_id.length() + 1];
      long_id.toCharArray(chr_long_id, long_id.length() + 1);
