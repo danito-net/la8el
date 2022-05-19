@@ -17,7 +17,7 @@ There are three types of la8el's device prototype for labeling system:
 
 The Ultra Wide-Band (UWB) technology in la8el devices are using Decawave's DWM1000 chip:
 
-![The DWM1000 chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/dwm1000.jpg)
+![The DWM1000 chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-dwm1000.jpg)
 
 ESP32 microcontroller as a main controller for DWM1000 chip:
 
