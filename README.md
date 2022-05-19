@@ -23,6 +23,11 @@ For anchors and tags device using [Cerdas UWB Tracker](https://github.com/geraic
 
 ![DWM1000 with ESP32chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/cerdas-uwb-tracker.jpg)
 
+The minimalist version of la8el tag (prototype):
+
+![la8el tag minimalist version](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-minimalist.jpg)
+
+
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag device prototype:
 
 #### 1.1. Install the latest "Raspberry Pi Imager" application ####
