@@ -28,7 +28,9 @@ The minimalist version of la8el tag (prototype):
 ![la8el tag minimalist version](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-minimalist.jpg)
 
 
-Please follow these steps to prepare the working la8el JAB-Code reader and label tag device prototype:
+![la8el tag prototype](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag.jpg)
+
+Please follow these steps to prepare the working la8el JAB-Code reader and label tag prototype:
 
 #### 1.1. Install the latest "Raspberry Pi Imager" application ####
 
