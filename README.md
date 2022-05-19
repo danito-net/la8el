@@ -242,6 +242,10 @@ To create a jabcode image do the following command:
 
     ~/jabcode/src/jabcodeWriter/bin/jabcodeWriter --input "Astra DB's Build-A-Thon by DataStax and AngelHack" --output message.png
 
+The generated JAB-Code:
+
+![a message](https://raw.githubusercontent.com/danito-net/la8el/main/images/message.png)
+
 To read a jabcode image do the following command:
 
     ~/jabcode/src/jabcodeReader/bin/jabcodeReader message.png
