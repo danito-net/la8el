@@ -28,7 +28,7 @@ The minimalist version of la8el tag (prototype):
 ![la8el tag minimalist version](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-minimalist.jpg)
 
 
-![la8el tag prototype](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag.jpg)
+![la8el tag prototype](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype.jpg)
 
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag prototype:
 
