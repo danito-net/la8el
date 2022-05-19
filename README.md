@@ -19,7 +19,7 @@ The Ultra Wide-Band (UWB) technology in la8el devices are using Decawave's DWM10
 
 ![The DWM1000 chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-dwm1000.jpeg)
 
-ESP32 microcontroller as a main controller for DWM1000 chip:
+Using an ESP32 microcontroller as a main controller for DWM1000 chip:
 
 ![DWM1000 with ESP32chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-dwm1000-esp32.jpeg)
 
