@@ -16,7 +16,12 @@ There are three types of la8el's device prototype for labeling system:
 3. la8el tag device, using Raspberry Pi Zero 2 W for computing / processing unit, also equipped with a DecaWave Module DWM1000; this unit is an IoT based digital label display
 
 The Ultra Wide-Band (UWB) technology in la8el devices are using Decawave's DWM1000 chip:
+
 ![The DWM1000 chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/dwm1000.jpg)
+
+ESP32 microcontroller as a main controller for DWM1000 chip:
+
+![DWM1000 with ESP32chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-dwm1000-esp32.jpeg)
 
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag device prototype:
 
