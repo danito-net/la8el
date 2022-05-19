@@ -19,9 +19,9 @@ The Ultra Wide-Band (UWB) technology in la8el devices are using Decawave's DWM10
 
 ![The DWM1000 chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/decawave-dwm1000.jpg)
 
-Using an ESP32 microcontroller as a main controller for DWM1000 chip:
+For anchors and tags device using [Cerdas UWB Tracker](https://github.com/geraicerdas/Cerdas-UWB-Tracker) (an opensource ESP32 microcontroller based UWB development board from [Gerai Cerdas](https://www.geraicerdas.com/) - Indonesia):
 
-![DWM1000 with ESP32chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-dwm1000-esp32.jpeg)
+![DWM1000 with ESP32chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/cerdas-uwb-tracker.jpg)
 
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag device prototype:
 
