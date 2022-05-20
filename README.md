@@ -54,13 +54,13 @@ A package with a physical label (encrypted and compressed JAB-Code) on conveyor:
 
 ![la8el physical label video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/a-package-with-physical-label-on-conveyor.gif)
 
-A package with a physical label (encrypted and compressed JAB-Code) along with a la8el-tag as a digital label :
+A package with a physical label (encrypted and compressed JAB-Code) along with a la8el-tag as a digital label:
 
 ![la8el physical label video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/a-package-with-physical-label-and-digital-label-on-conveyor.gif)
 
-A package with a la8el-tag with LCD as a digital label :
+A package with a fully digital label (a la8el-tag with LCD as a digital label):
 
-![la8el physical label video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/la8el-tag-digital-label-on-conveyor.gif)
+![la8el physical label video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/a-package-with-fully-digital-label-on-conveyor.gif)
 
 
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag prototype:
