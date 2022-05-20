@@ -50,9 +50,9 @@ The la8el-tag prototype version 0.2 (using 3800 mAH lithium polymer battery and 
 
 ![la8el-tag prototype version 0.2 video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/la8el-tag-v02.gif)
 
-A package with a physical label (encrypted and compressed JAB-Code) on it:
+A package with a physical label (encrypted and compressed JAB-Code) on conveyor:
 
-![la8el physical label video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/la8el-physical-label-on-conveyor.gif)
+![la8el physical label video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/a-package-with-physical-label-on-conveyor.gif)
 
 A package with a physical label (encrypted and compressed JAB-Code) and a la8el-tag as a digital label :
 
