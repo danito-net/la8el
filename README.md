@@ -8,7 +8,7 @@
 
 The "**la8el**" wrote with "**8**" at the middle, pronounced as "**phygital label**" (phygital = physical + digital)
 
-The la8el is a physical and digital labeling system that uses compressed and encrypted JAB-Code as a replacement for regular QR-Code to extend the data capacity and security ; using Astra DB as a bridge to Ultra Wide-Band technology for indoor 'GPS' assets tracking.
+The la8el is a physical and digital labeling system that uses compressed and encrypted JAB-Code as a replacement for regular QR-Code to extend the data capacity and security ; using Astra DB as a bridge to Ultra Wide-Band (UWB) technology for Real-Time Location System (RTLS) in assets tracking.
 
 The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a backend database for apps that need scale. Aside from offering high performance and reliability, Cassandra’s architecture makes it possible to scale horizontally to handle very high loads.  Since **Astra DB** simplifies cloud-native Cassandra application development, when you combine the IoT / Internet-of-Things system with Astra DB you get all the benefits of Cassandra with the flexibility of a multi-cloud, serverless database-as-a-service (DBaaS).
 
@@ -16,7 +16,7 @@ We need to first create an Astra DB instance and gather all your credentials. If
 
 There are three types of la8el's device prototype for labeling system:
 1. la8el JAB-Code reader, using Raspberry Pi Compute Module 4 CM4 8GB for computing / processing unit, equipped with a high resolution auto-focus camera
-2. la8el anchor device (4 units); using ESP32 micro controller for controlling unit, equipped with a DecaWave Module DWM1000; these units is a 'satellites' for indoor positioning system / asset tracking
+2. la8el anchor devices (4 units); using ESP32 micro controller for controlling unit, equipped with a DecaWave Module DWM1000; these units is a 'satellites' for indoor positioning system / asset tracking
 3. la8el tag device, using Raspberry Pi Zero 2 W for computing / processing unit, also equipped with a DecaWave Module DWM1000; this unit is an IoT based digital label display
 
 ![la8el anchors and tags](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-anchors-and-tags.jpg)
