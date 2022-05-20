@@ -16,8 +16,8 @@ We need to first create an Astra DB instance and gather all your credentials. If
 
 There are three types of la8el's device prototype for labeling system:
 1. la8el JAB-Code reader, using Raspberry Pi Compute Module 4 CM4 8GB for computing / processing unit, equipped with a high resolution auto-focus camera
-2. la8el anchor devices (4 units); using ESP32 micro controller for controlling unit, equipped with a DecaWave Module DWM1000; these units is a 'satellites' for indoor positioning system / asset tracking
-3. la8el tag device, using Raspberry Pi Zero 2 W for computing / processing unit, also equipped with a DecaWave Module DWM1000; this unit is an IoT based digital label display
+2. la8el-anchor devices (4 units); using ESP32 micro controller for controlling unit, equipped with a DecaWave Module DWM1000; these units is a 'satellites' for indoor positioning system / asset tracking
+3. la8el-tag device, using Raspberry Pi Zero 2 W for computing / processing unit, also equipped with a DecaWave Module DWM1000; this unit is an IoT based digital label display
 
 ![la8el anchors and tags](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-anchors-and-tags.jpg)
 
@@ -30,21 +30,21 @@ For anchors and tags device using [Cerdas UWB Tracker](https://github.com/geraic
 
 ![DWM1000 with ESP32chip](https://raw.githubusercontent.com/danito-net/la8el/main/images/cerdas-uwb-tracker.jpg)
 
-The minimalist version of la8el tag (prototype):
+The minimalist version of la8el-tag (prototype):
 
-![la8el tag minimalist version](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-minimalist.jpg)
-
-
-
-### 1. la8el JAB-Code Reader & la8el Tag Prototype Installation + Configuration ###
+![la8el-tag minimalist version](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-minimalist.jpg)
 
 
-The la8el tag prototype version 0.1 (using 2 x 18650 lithium batteries and Cerdas UWB Tracker):
+
+### 1. la8el JAB-Code Reader & la8el-tag Prototype Installation + Configuration ###
+
+
+The la8el-tag prototype version 0.1 (using 2 x 18650 lithium batteries and Cerdas UWB Tracker):
 
 ![la8el tag prototype version 0.1](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype.jpg)
 
 
-The la8el tag prototype version 0.2 (using 3800 mAH lithium polymer battery and UWB Breakout + DWM1000):
+The la8el-tag prototype version 0.2 (using 3800 mAH lithium polymer battery and UWB Breakout + DWM1000):
 
 ![la8el tag prototype version 0.2](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype-2.jpg)
 
