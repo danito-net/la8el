@@ -46,9 +46,9 @@ The la8el-tag prototype version 0.1 (using 2 x 18650 lithium batteries and Cerda
 
 The la8el-tag prototype version 0.2 (using 3800 mAH lithium polymer battery and UWB Breakout + DWM1000):
 
-![la8el tag prototype version 0.2](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype-2.jpg)
+![la8el-tag prototype version 0.2](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype-2.jpg)
 
-![la8el tag](https://github.com/danito-net/la8el/blob/main/videos/la8el-tag-prototype.mp4)
+![la8el-tag](https://github.com/danito-net/la8el/blob/main/videos/la8el-tag-2.gif)
 
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag prototype:
 
