@@ -32,7 +32,14 @@ The minimalist version of la8el tag (prototype):
 ### 1. la8el JAB-Code Reader & la8el Tag Prototype Installation + Configuration ###
 
 
-![la8el tag prototype](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype.jpg)
+The la8el tag prototype version 0.1:
+
+![la8el tag prototype version 0.1](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype.jpg)
+
+
+The la8el tag prototype version 0.2:
+
+![la8el tag prototype version 0.2](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype-2.jpg)
 
 ![la8el tag](https://github.com/danito-net/la8el/blob/main/videos/la8el-tag-prototype.mp4)
 
