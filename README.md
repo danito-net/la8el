@@ -32,12 +32,12 @@ The minimalist version of la8el tag (prototype):
 ### 1. la8el JAB-Code Reader & la8el Tag Prototype Installation + Configuration ###
 
 
-The la8el tag prototype version 0.1:
+The la8el tag prototype version 0.1 (using 2 x 18650 lithium batteries and Cerdas UWB Tracker):
 
 ![la8el tag prototype version 0.1](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype.jpg)
 
 
-The la8el tag prototype version 0.2:
+The la8el tag prototype version 0.2 (using 3800 mAH lithium polymer battery and UWB Breakout + DWM1000):
 
 ![la8el tag prototype version 0.2](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el-tag-prototype-2.jpg)
 
