@@ -1,13 +1,14 @@
 # la8el - The Phygital Labeling System
 
+( This repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) Round-3 hackathon submission )
+
+
 ![la8el's logo](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el.jpg)
 
-Note:
-1. The "**la8el**" wrote with "**8**" at the middle, pronounced as "**phygital label**" (phygital = physical + digital)
-2. This repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) Round-3 hackathon submission
 
+The "**la8el**" wrote with "**8**" at the middle, pronounced as "**phygital label**" (phygital = physical + digital)
 
-The la8el is a physical and digital labeling system that uses compressed and encrypted JAB-Code as a replacement for regular QR-Code to extend the data capacity and security ; using Astra DB as a bridge to Ultra Wide-Band technology for indoor 'GPS' asset tracking.
+The la8el is a physical and digital labeling system that uses compressed and encrypted JAB-Code as a replacement for regular QR-Code to extend the data capacity and security ; using Astra DB as a bridge to Ultra Wide-Band technology for indoor 'GPS' assets tracking.
 
 The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a backend database for apps that need scale. Aside from offering high performance and reliability, Cassandra’s architecture makes it possible to scale horizontally to handle very high loads.  Since **Astra DB** simplifies cloud-native Cassandra application development, when you combine the IoT / Internet-of-Things system with Astra DB you get all the benefits of Cassandra with the flexibility of a multi-cloud, serverless database-as-a-service (DBaaS).
 
