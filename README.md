@@ -54,6 +54,11 @@ A package with a physical label (encrypted and compressed JAB-Code) on it:
 
 ![la8el physical label video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/la8el-physical-label-on-conveyor.gif)
 
+A package with a physical label (encrypted and compressed JAB-Code) and a la8el-tag as a digital label :
+
+![la8el physical label video](https://raw.githubusercontent.com/danito-net/la8el/main/videos/la8el-physical-label-and-digital-label-on-conveyor.gif)
+
+
 Please follow these steps to prepare the working la8el JAB-Code reader and label tag prototype:
 
 #### 1.1. Install the latest "Raspberry Pi Imager" application ####
