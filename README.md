@@ -1,6 +1,6 @@
 # la8el - The Phygital Labeling System
 
-( This repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) Round-3 hackathon submission )
+(This repository is to complete the requirements for [Astra DB's Build-A-Thon](https://buildathonhack.com/) Round-3 hackathon submission)
 
 
 ![la8el's logo](https://raw.githubusercontent.com/danito-net/la8el/main/images/la8el.jpg)
@@ -100,6 +100,7 @@ Please follow these steps to prepare the working la8el JAB-Code reader and label
 
 #### 1.5. Configure the Raspbian OS ####
 
+* Raspberry Pi OS (RasPiOS) 2022-04-04 is not using default username "pi", but will asking for a username; in these steps we will use "pi" as a username (please change all of "/home/pi" with your prefer username, example: "/home/danito") 
 * Choose the appropriate configuration for: setting country, location / region, language, keyboard layout, user password, etc
 * Connect to wireless network using WiFi to available Access Point
 * Activate `SSH` and `VNC` for easy access (so you can copy paste from other computer); select from start menu (Raspberry pi's logo at upper left screen) > Preferences > Raspberry Pi Configuration > Interfaces tab > enable **SSH** and **VNC**
@@ -135,8 +136,17 @@ Using the "terminal" application give the following command:
     wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py
     sudo python3 raspi-blinka.py
     sudo pip3 install adafruit-circuitpython-rgb-display
-    
+
+
+
 #### 1.9. Install basic tools for software development ####
+
+
+Notes:
+
+- For RasPiOS 2022-0404 the `libssl-dev` already installed by default, you can skip `sudo apt install libssl-dev` command
+- Please change every `make -j$(nproc)` into `make` if you want to use only 1 core of processor (slower but will avoid overheat that cause an error)
+
 
 Using the "terminal" application give the following commands:
 
@@ -164,10 +174,9 @@ Using the "terminal" application give the following commands:
     git clone https://github.com/Kitware/CMake.git
     cd CMake
     ./bootstrap
-    make
+    make -j$(nproc)
     sudo make install
     sudo ldconfig
-
 
 #### 1.11. Compile and install the latest ImageMagick ####
 
@@ -177,7 +186,7 @@ ImageMagick is a tools for image processing and converting purposes. Using the "
     git clone https://github.com/ImageMagick/ImageMagick.git
     cd ImageMagick
     ./configure
-    make
+    make -j$(nproc)
     sudo make install
     sudo ldconfig
 
@@ -192,7 +201,7 @@ Using the "terminal" application give the following commands:
     cd zlib-1.2.11
     ./configure
     cmake .
-    make
+    make -j$(nproc)
     sudo make install
     sudo ldconfig
 
@@ -206,7 +215,7 @@ Using the "terminal" application give the following commands:
     tar xvzf libpng-1.6.37.tar.gz
     cd libpng-1.6.37
     ./configure
-    make
+    make -j$(nproc)
     sudo make install
     sudo ldconfig
 
@@ -219,7 +228,7 @@ Using the "terminal" application give the following commands:
     tar xvzf tiff-4.3.0.tar.gz
     cd tiff-4.3.0
     ./configure
-    make
+    make -j$(nproc)
     sudo make install
 
 
@@ -232,7 +241,7 @@ Using the "terminal" application give the following commands:
     tar xvzf jpegsrc.v9d.tar.gz
     cd jpeg-9d/
     ./configure
-    make
+    make -j$(nproc)
     sudo make install
     sudo ldconfig
 
@@ -245,7 +254,7 @@ Using the "terminal" application give the following commands:
     wget https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.1.tar.gz
     tar xvzf jbigkit-2.1.tar.gz
     cd jbigkit-2.1
-    make
+    make -j$(nproc)
 
 
 #### 1.17. Install the "lzma-dev" and "liblzma-dev" libraries ####
@@ -273,12 +282,12 @@ Using the "terminal" application give the following commands:
     cp ~/jbigkit-2.1/libjbig/libjbig.a .
     sudo chown -R pi.pi ~/*
     cd ..
-    make
+    make -j$(nproc)
     cd ../jabcodeWriter
-    make
+    make -j$(nproc)
     cp bin/jabcodeWriter ~/
     cd ../jabcodeReader
-    make
+    make -j$(nproc)
     cp bin/jabcodeReader ~/
     cd ~
 
