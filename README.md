@@ -100,7 +100,7 @@ Please follow these steps to prepare the working la8el JAB-Code reader and label
 
 #### 1.5. Configure the Raspbian OS ####
 
-* Raspberry Pi OS (RasPiOS) 2022-04-04 is not using default username "pi", but will asking for a username; in these steps we will use "pi" as a username (please change all of "/home/pi" with your prefer username, example: "/home/danito") 
+* Raspberry Pi OS (RasPiOS) 2022-04-04 is not using default username `pi`, but will asking for a username; in these steps we will use `pi` as a username (please change all of `/home/pi` with your prefer username, example: `/home/danito`) 
 * Choose the appropriate configuration for: setting country, location / region, language, keyboard layout, user password, etc
 * Connect to wireless network using WiFi to available Access Point
 * Activate `SSH` and `VNC` for easy access (so you can copy paste from other computer); select from start menu (Raspberry pi's logo at upper left screen) > Preferences > Raspberry Pi Configuration > Interfaces tab > enable **SSH** and **VNC**
@@ -127,7 +127,7 @@ When installation finished, please disable the screensaver also disable blank / 
 Menu > Preferences > Screensaver > Display Modes tab > Mode > Disable Screen Save
 
 
-#### 1.8. Install RasPi Blinka from AdaFruit (for OLED 240x240) ####
+#### 1.8. Install RasPi Blinka from AdaFruit (for PiTFT 1.3 inch HAT / OLED 240x240) ####
 
 Using the "terminal" application give the following command:
 
@@ -230,6 +230,7 @@ Using the "terminal" application give the following commands:
     ./configure
     make -j$(nproc)
     sudo make install
+    sudo ldconfig
 
 
 #### 1.15. Compile and install the latest "jpeg-9d" library  ####
@@ -263,6 +264,7 @@ Using the "terminal" application give the following commands:
 
     cd ~
     sudo apt install lzma-dev liblzma-dev
+    sudo ldconfig
 
 
 #### 1.18. Compile and install "jabcode" from my repository ####
@@ -280,23 +282,27 @@ Using the "terminal" application give the following commands:
     sudo cp /usr/local/lib/libjpeg.a .
     sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a . 
     cp ~/jbigkit-2.1/libjbig/libjbig.a .
-    sudo chown -R pi.pi ~/*
+    sudo chown -R pi.pi ~/jabcode
     cd ..
+    sudo mkdir -p /opt/jabcode/bin
     make -j$(nproc)
     cd ../jabcodeWriter
     make -j$(nproc)
-    cp bin/jabcodeWriter ~/
+    sudo cp bin/jabcodeWriter /opt/jabcode/bin
     cd ../jabcodeReader
     make -j$(nproc)
-    cp bin/jabcodeReader ~/
+    sudo cp bin/jabcodeReader /opt/jabcode/bin
     cd ~
+    echo "export PATH=\"/opt/jabcode/bin:\$PATH\"" >> ~/.bashrc
+    source .bashrc
+    sudo ldconfig
 
 
 #### 1.19. Testing the `jabcodeWriter` and `jabcodeReader` ####
 
 To create a jabcode image do the following command:
 
-    ~/jabcode/src/jabcodeWriter/bin/jabcodeWriter --input "Astra DB's Build-A-Thon by DataStax and AngelHack" --output message.png
+    jabcodeWriter --input "Astra DB's Build-A-Thon by DataStax and AngelHack" --output message.png
 
 The generated JAB-Code:
 
@@ -304,17 +310,7 @@ The generated JAB-Code:
 
 To read a jabcode image do the following command:
 
-    ~/jabcode/src/jabcodeReader/bin/jabcodeReader message.png
+    jabcodeReader message.png
 
-Because we already copying the executable binary file to user "pi" home directory, simply do from user pi home directory (using command `cd ~`) the following commands:
-
-To create a jabcode image do the following command:
-
-    ./jabcodeWriter --input "Astra DB's Build-A-Thon by DataStax and AngelHack" --output message.png
-
-To read a jabcode image do the following command:
-
-    ./jabcodeReader message.png
-
-Android smartphone can install JabCode application from my GitHub repository : [JabCode Reader for Android ](https://github.com/danito-net/jabcode/blob/master/android_reader/JabCodeApp.apk)
+For Android OS of JabCode reader, you can manually install from APK file on my GitHub repository : [JabCode Reader for Android ](https://github.com/danito-net/jabcode/blob/master/android_reader/JabCodeApp.apk)
 
