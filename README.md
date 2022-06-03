@@ -271,6 +271,8 @@ Using the "terminal" application give the following commands:
 
 Using the "terminal" application give the following commands:
 
+For Raspberry Pi OS 64bit please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/aarch64-linux-gnu/liblzma.a .`
+
     cd ~
     git clone https://github.com/danito-net/jabcode.git
     cd jabcode/src/jabcode/lib
@@ -280,7 +282,7 @@ Using the "terminal" application give the following commands:
     sudo cp /usr/local/lib/libpng16.a .
     sudo cp /usr/local/lib/libtiff.a .
     sudo cp /usr/local/lib/libjpeg.a .
-    sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a . 
+    sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .
     cp ~/jbigkit-2.1/libjbig/libjbig.a .
     sudo chown -R pi.pi ~/jabcode
     cd ..
