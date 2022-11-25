@@ -190,20 +190,18 @@ ImageMagick is a tools for image processing and converting purposes. Using the "
     sudo make install
     sudo ldconfig
 
-
 #### 1.12. Compile and install the latest "zlib" library ####
 
-Using the "terminal" application give the following commands:
+Using the "terminal" application give the following commands (for the newest release number of zlib please reffer to https://zlib.net/):
 
     cd ~
-    wget https://zlib.net/zlib-1.2.12.tar.gz
+    wget https://zlib.net/zlib-1.2.13.tar.gz
     tar xvzf zlib-1.2.12.tar.gz
     cd zlib-1.2.11
     ./configure
     cmake .
     make -j$(nproc)
     sudo make install
-    sudo ldconfig
 
 
 #### 1.13. Compile and install the latest "libpng" library  ####
@@ -217,7 +215,7 @@ Using the "terminal" application give the following commands:
     ./configure
     make -j$(nproc)
     sudo make install
-    sudo ldconfig
+
 
 #### 1.14. Compile and install the latest "tiff" library  ####
 
@@ -230,7 +228,6 @@ Using the "terminal" application give the following commands:
     ./configure
     make -j$(nproc)
     sudo make install
-    sudo ldconfig
 
 
 #### 1.15. Compile and install the latest "jpeg-9d" library  ####
@@ -244,7 +241,6 @@ Using the "terminal" application give the following commands:
     ./configure
     make -j$(nproc)
     sudo make install
-    sudo ldconfig
 
 
 #### 1.16. Compile and install the latest "jbigkit" library  ####
@@ -262,9 +258,7 @@ Using the "terminal" application give the following commands:
 
 Using the "terminal" application give the following commands:
 
-    cd ~
     sudo apt install lzma-dev liblzma-dev
-    sudo ldconfig
 
 
 #### 1.18. Compile and install "jabcode" from my repository ####
@@ -297,7 +291,6 @@ For Raspberry Pi OS 64bit please change `sudo cp /usr/lib/arm-linux-gnueabihf/li
     cd ~
     echo "export PATH=\"/opt/jabcode/bin:\$PATH\"" >> ~/.bashrc
     source .bashrc
-    sudo ldconfig
 
 
 #### 1.19. Testing the `jabcodeWriter` and `jabcodeReader` ####
