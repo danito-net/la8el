@@ -262,6 +262,7 @@ Using the "terminal" application give the following commands:
 Using the "terminal" application give the following commands:
 
 For Raspberry Pi OS 64bit please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/aarch64-linux-gnu/liblzma.a .`
+For machine with Intel-family processor and 64bit OS Linux please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/x86_64-linux-gnu/liblzma.a .`
 
     cd ~
     git clone https://github.com/danito-net/jabcode.git
@@ -274,7 +275,9 @@ For Raspberry Pi OS 64bit please change `sudo cp /usr/lib/arm-linux-gnueabihf/li
     sudo cp /usr/local/lib/libjpeg.a .
     sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .
     cp ~/jbigkit-2.1/libjbig/libjbig.a .
-    sudo chown -R pi.pi ~/jabcode
+    export UserName=$(whoami)
+    export UserGroup=$(id -g -n $UserName)
+    sudo chown -R $UserName.$UserGroup ~/jabcode
     cd ..
     sudo mkdir -p /opt/jabcode/bin
     make -j$(nproc)
