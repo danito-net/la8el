@@ -155,11 +155,13 @@ Using the "terminal" application give the following commands:
     sudo apt install libtool
     sudo apt install uuid-dev
     sudo apt install ninja-build
-    sudo apt install lrzip 
+    sudo apt install lrzip
+    sudo apt install lzma-dev
+    sudo apt install liblzma-dev
 
 or in just one line command:
 
-    sudo apt install libssl-dev autoconf libtool uuid-dev ninja-build lrzip
+    sudo apt install libssl-dev autoconf libtool uuid-dev ninja-build lrzip lzma-dev liblzma-dev
 
 and then do a `ldconfig` command:
 
@@ -196,8 +198,8 @@ Using the "terminal" application give the following commands (for the newest rel
 
     cd ~
     wget https://zlib.net/zlib-1.2.13.tar.gz
-    tar xvzf zlib-1.2.12.tar.gz
-    cd zlib-1.2.11
+    tar xvzf zlib-1.2.13.tar.gz
+    cd zlib-1.2.13
     ./configure
     cmake .
     make -j$(nproc)
@@ -209,9 +211,9 @@ Using the "terminal" application give the following commands (for the newest rel
 Using the "terminal" application give the following commands:
 
     cd ~
-    wget https://nchc.dl.sourceforge.net/project/libpng/libpng16/1.6.37/libpng-1.6.37.tar.gz
-    tar xvzf libpng-1.6.37.tar.gz
-    cd libpng-1.6.37
+    wget https://onboardcloud.dl.sourceforge.net/project/libpng/libpng16/1.6.39/libpng-1.6.39.tar.gz
+    tar xvzf libpng-1.6.39.tar.gz
+    cd libpng-1.6.39
     ./configure
     make -j$(nproc)
     sudo make install
@@ -222,9 +224,9 @@ Using the "terminal" application give the following commands:
 Using the "terminal" application give the following commands:
 
     cd ~
-    wget http://download.osgeo.org/libtiff/tiff-4.3.0.tar.gz
-    tar xvzf tiff-4.3.0.tar.gz
-    cd tiff-4.3.0
+    wget http://download.osgeo.org/libtiff/tiff-4.5.0.tar.gz
+    tar xvzf tiff-4.5.0.tar.gz
+    cd tiff-4.5.0
     ./configure
     make -j$(nproc)
     sudo make install
@@ -235,9 +237,9 @@ Using the "terminal" application give the following commands:
 Using the "terminal" application give the following commands:
 
     cd ~
-    wget https://www.ijg.org/files/jpegsrc.v9d.tar.gz
-    tar xvzf jpegsrc.v9d.tar.gz
-    cd jpeg-9d/
+    wget https://www.ijg.org/files/jpegsrc.v9e.tar.gz
+    tar xvzf jpegsrc.v9e.tar.gz
+    cd jpeg-9e/
     ./configure
     make -j$(nproc)
     sudo make install
@@ -254,14 +256,8 @@ Using the "terminal" application give the following commands:
     make -j$(nproc)
 
 
-#### 1.17. Install the "lzma-dev" and "liblzma-dev" libraries ####
 
-Using the "terminal" application give the following commands:
-
-    sudo apt install lzma-dev liblzma-dev
-
-
-#### 1.18. Compile and install "jabcode" from my repository ####
+#### 1.17. Compile and install "jabcode" from my repository ####
 
 Using the "terminal" application give the following commands:
 
@@ -293,7 +289,7 @@ For Raspberry Pi OS 64bit please change `sudo cp /usr/lib/arm-linux-gnueabihf/li
     source .bashrc
 
 
-#### 1.19. Testing the `jabcodeWriter` and `jabcodeReader` ####
+#### 1.18. Testing the `jabcodeWriter` and `jabcodeReader` ####
 
 To create a jabcode image do the following command:
 
