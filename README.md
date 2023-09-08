@@ -197,23 +197,24 @@ ImageMagick is a tools for image processing and converting purposes. Using the "
 Using the "terminal" application give the following commands (for the newest release number of zlib please reffer to https://zlib.net/):
 
     cd ~
-    wget https://zlib.net/zlib-1.2.13.tar.gz
-    tar xvzf zlib-1.2.13.tar.gz
-    cd zlib-1.2.13
+    wget https://zlib.net/zlib-1.3.tar.gz
+    tar xvzf zlib-1.3.tar.gz
+    cd zlib-1.3
     ./configure
     cmake .
     make -j$(nproc)
     sudo make install
 
+Note: Please refer to zlib's official website (https://zlib.net/) for the latest version of zlib
 
 #### 1.13. Compile and install the latest "libpng" library  ####
 
 Using the "terminal" application give the following commands:
 
     cd ~
-    wget https://onboardcloud.dl.sourceforge.net/project/libpng/libpng16/1.6.39/libpng-1.6.39.tar.gz
-    tar xvzf libpng-1.6.39.tar.gz
-    cd libpng-1.6.39
+    wget https://onboardcloud.dl.sourceforge.net/project/libpng/libpng16/1.6.40/libpng-1.6.40.tar.gz
+    tar xvzf libpng-1.6.40.tar.gz
+    cd libpng-1.6.40
     ./configure
     make -j$(nproc)
     sudo make install
@@ -224,9 +225,9 @@ Using the "terminal" application give the following commands:
 Using the "terminal" application give the following commands:
 
     cd ~
-    wget http://download.osgeo.org/libtiff/tiff-4.5.0.tar.gz
-    tar xvzf tiff-4.5.0.tar.gz
-    cd tiff-4.5.0
+    wget http://download.osgeo.org/libtiff/tiff-4.5.1.tar.gz
+    tar xvzf tiff-4.5.1.tar.gz
+    cd tiff-4.5.1
     ./configure
     make -j$(nproc)
     sudo make install
