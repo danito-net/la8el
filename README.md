@@ -263,8 +263,15 @@ Using the "terminal" application give the following commands (the latest release
 
 Using the "terminal" application give the following commands:
 
-For Raspberry Pi OS 64bit please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/aarch64-linux-gnu/liblzma.a .`
-For machine with Intel-family processor and 64bit OS Linux please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/x86_64-linux-gnu/liblzma.a .`
+Please find the full-path of `liblzma.a` file location in /usr/lib
+
+    find /usr/lib/ | grep liblzma.a
+
+The full path `liblzma.a` for Nano Pi with Ubuntu OS 64bit or Raspberry Pi with RaspbianOS 64bit is `/usr/lib/aarch64-linux-gnu/liblzma.a`
+So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/aarch64-linux-gnu/liblzma.a .`
+
+The full path `liblzma.a` for machine with Intel-family processor and 64bit OS Linux is `/usr/lib/x86_64-linux-gnu/liblzma.a`
+So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/x86_64-linux-gnu/liblzma.a .`
 
     cd ~
     git clone https://github.com/danito-net/jabcode.git
