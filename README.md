@@ -179,6 +179,7 @@ Using the "terminal" application give the following commands:
     make -j$(nproc)
     sudo make install
     sudo ldconfig
+    cmake --version
 
 #### 1.11. Compile and install the latest ImageMagick ####
 
@@ -191,30 +192,30 @@ ImageMagick is a tools for image processing and converting purposes. Using the "
     make -j$(nproc)
     sudo make install
     sudo ldconfig
+    magick --version
 
 #### 1.12. Compile and install the latest "zlib" library ####
 
 Using the "terminal" application give the following commands (for the newest release number of zlib please reffer to https://zlib.net/):
 
     cd ~
-    wget https://zlib.net/zlib-1.3.tar.gz
-    tar xvzf zlib-1.3.tar.gz
-    cd zlib-1.3
+    wget https://zlib.net/zlib-1.3.1.tar.gz
+    tar xvzf zlib-1.3.1.tar.gz
+    cd zlib-1.3.1
     ./configure
     cmake .
     make -j$(nproc)
     sudo make install
 
-Note: Please refer to zlib's official website (https://zlib.net/) for the latest version of zlib
 
 #### 1.13. Compile and install the latest "libpng" library  ####
 
-Using the "terminal" application give the following commands:
+Using the "terminal" application give the following commands (for the newest release number of libpng please reffer to https://sourceforge.net/projects/libpng/files/):
 
     cd ~
-    wget https://onboardcloud.dl.sourceforge.net/project/libpng/libpng16/1.6.40/libpng-1.6.40.tar.gz
-    tar xvzf libpng-1.6.40.tar.gz
-    cd libpng-1.6.40
+    wget https://onboardcloud.dl.sourceforge.net/project/libpng/libpng16/1.6.50/libpng-1.6.50.tar.gz
+    tar xvzf libpng-1.6.50.tar.gz
+    cd libpng-1.6.50
     ./configure
     make -j$(nproc)
     sudo make install
@@ -222,25 +223,25 @@ Using the "terminal" application give the following commands:
 
 #### 1.14. Compile and install the latest "tiff" library  ####
 
-Using the "terminal" application give the following commands:
+Using the "terminal" application give the following commands (for the newest release number of libtiff please reffer to http://download.osgeo.org/libtiff/):
 
     cd ~
-    wget http://download.osgeo.org/libtiff/tiff-4.5.1.tar.gz
-    tar xvzf tiff-4.5.1.tar.gz
-    cd tiff-4.5.1
+    wget https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz
+    tar xvzf tiff-4.7.0.tar.gz
+    cd tiff-4.7.0
     ./configure
     make -j$(nproc)
     sudo make install
 
 
-#### 1.15. Compile and install the latest "jpeg-9d" library  ####
+#### 1.15. Compile and install the latest "jpeg-9f" library  ####
 
-Using the "terminal" application give the following commands:
+Using the "terminal" application give the following commands (for the newest release number of jpeg please reffer to https://www.ijg.org/files/):
 
     cd ~
-    wget https://www.ijg.org/files/jpegsrc.v9e.tar.gz
-    tar xvzf jpegsrc.v9e.tar.gz
-    cd jpeg-9e/
+    wget https://www.ijg.org/files/jpegsrc.v9f.tar.gz
+    tar xvzf jpegsrc.v9f.tar.gz
+    cd jpeg-9f/
     ./configure
     make -j$(nproc)
     sudo make install
@@ -248,7 +249,7 @@ Using the "terminal" application give the following commands:
 
 #### 1.16. Compile and install the latest "jbigkit" library  ####
 
-Using the "terminal" application give the following commands:
+Using the "terminal" application give the following commands (the latest release was year 2014, please check if any update here https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/):
 
     cd ~
     wget https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.1.tar.gz
