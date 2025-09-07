@@ -12,7 +12,7 @@ The la8el is a physical and digital labeling system that uses compressed and enc
 
 The [Apache Cassandra](https://cassandra.apache.org/) is the ideal choice as a backend database for apps that need scale. Aside from offering high performance and reliability, Cassandra’s architecture makes it possible to scale horizontally to handle very high loads.  Since **Astra DB** simplifies cloud-native Cassandra application development, when you combine the IoT / Internet-of-Things system with Astra DB you get all the benefits of Cassandra with the flexibility of a multi-cloud, serverless database-as-a-service (DBaaS).
 
-We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a [free Astra DB account](https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l); no credit card required and $25.00 USD credit every month (roughly 20M reads/writes, 80GB storage monthly) which is sufficient to run small production workloads.
+We need to first create an Astra DB instance and gather all your credentials. If you haven’t already, you can sign up for a [free Astra DB account](https://astra.datastax.com/register/U2FsdGVkX19zeWDUisJfqu6pgafepR9DQlGoSfelRapdhWXHN4tOhOh4TWeg6yvtkItADFtdcZwJLBpicGp2vwe1Q2u3A4le1Q2u3A4l)
 
 There are three types of la8el's device prototype for labeling system:
 1. la8el JAB-Code reader, using Raspberry Pi Compute Module 4 CM4 8GB for computing / processing unit, equipped with a high resolution auto-focus camera
