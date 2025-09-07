@@ -263,16 +263,6 @@ Using the "terminal" application give the following commands (the latest release
 
 Using the "terminal" application give the following commands:
 
-Please find the full-path of `liblzma.a` file location in /usr/lib
-
-    find /usr/lib/ | grep liblzma.a
-
-The full path `liblzma.a` for Nano Pi with Ubuntu OS 64bit or Raspberry Pi with RaspbianOS 64bit is `/usr/lib/aarch64-linux-gnu/liblzma.a`
-So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/aarch64-linux-gnu/liblzma.a .`
-
-The full path `liblzma.a` for machine with Intel-family processor and 64bit OS Linux is `/usr/lib/x86_64-linux-gnu/liblzma.a`
-So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo cp /usr/lib/x86_64-linux-gnu/liblzma.a .`
-
     cd ~
     git clone https://github.com/danito-net/jabcode.git
     cd jabcode/src/jabcode/lib
@@ -282,20 +272,34 @@ So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` into `sudo c
     sudo cp /usr/local/lib/libpng16.a .
     sudo cp /usr/local/lib/libtiff.a .
     sudo cp /usr/local/lib/libjpeg.a .
+    
+Please find the full-path of `liblzma.a` file location in /usr/lib using this command:
+
+    find /usr/lib/ | grep liblzma.a
+
+The full path `liblzma.a` for Nano Pi with Ubuntu OS 64bit or Raspberry Pi with RaspbianOS 64bit is `/usr/lib/aarch64-linux-gnu/liblzma.a`
+So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` below, into `sudo cp /usr/lib/aarch64-linux-gnu/liblzma.a .`
+
+The full path `liblzma.a` for machine with Intel-family processor and 64bit OS Linux is `/usr/lib/x86_64-linux-gnu/liblzma.a`
+So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` below, into `sudo cp /usr/lib/x86_64-linux-gnu/liblzma.a .`
+
     sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .
+
+Then continue doing this commands:
+    
     cp ~/jbigkit-2.1/libjbig/libjbig.a .
     export UserName=$(whoami)
     export UserGroup=$(id -g -n $UserName)
     sudo chown -R $UserName.$UserGroup ~/jabcode
     cd ..
-    sudo mkdir -p /opt/jabcode/bin
     make -j$(nproc)
     cd ../jabcodeWriter
     make -j$(nproc)
-    sudo cp bin/jabcodeWriter /opt/jabcode/bin
     cd ../jabcodeReader
     make -j$(nproc)
-    sudo cp bin/jabcodeReader /opt/jabcode/bin
+    sudo mkdir -p /opt/jabcode/bin
+    sudo cp ~/jabcode/src/jabcodeWriter/bin/jabcodeWriter /opt/jabcode/bin
+    sudo cp ~/jabcode/src/jabcodeReader/bin/jabcodeReader /opt/jabcode/bin
     cd ~
     echo "export PATH=\"/opt/jabcode/bin:\$PATH\"" >> ~/.bashrc
     source .bashrc
