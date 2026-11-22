@@ -156,12 +156,11 @@ Using the "terminal" application give the following commands:
     sudo apt install uuid-dev
     sudo apt install ninja-build
     sudo apt install lrzip
-    sudo apt install lzma-dev
     sudo apt install liblzma-dev
 
 or in just one line command:
 
-    sudo apt install libssl-dev autoconf libtool uuid-dev ninja-build lrzip lzma-dev liblzma-dev
+    sudo apt install libssl-dev autoconf libtool uuid-dev ninja-build lrzip liblzma-dev
 
 and then do a `ldconfig` command:
 
@@ -199,9 +198,9 @@ ImageMagick is a tools for image processing and converting purposes. Using the "
 Using the "terminal" application give the following commands (for the newest release number of zlib please reffer to https://zlib.net/):
 
     cd ~
-    wget https://zlib.net/zlib-1.3.1.tar.gz
-    tar xvzf zlib-1.3.1.tar.gz
-    cd zlib-1.3.1
+    wget https://zlib.net/zlib-1.4.tar.gz
+    tar xvzf zlib-1.4.tar.gz
+    cd zlib-1.4
     ./configure
     cmake .
     make -j$(nproc)
@@ -213,9 +212,9 @@ Using the "terminal" application give the following commands (for the newest rel
 Using the "terminal" application give the following commands (for the newest release number of libpng please reffer to https://sourceforge.net/projects/libpng/files/):
 
     cd ~
-    wget https://onboardcloud.dl.sourceforge.net/project/libpng/libpng16/1.6.50/libpng-1.6.50.tar.gz
-    tar xvzf libpng-1.6.50.tar.gz
-    cd libpng-1.6.50
+    wget https://onboardcloud.dl.sourceforge.net/project/libpng/libpng16/1.6.59/libpng-1.6.59.tar.gz
+    tar xvzf libpng-1.6.59.tar.gz
+    cd libpng-1.6.59
     ./configure
     make -j$(nproc)
     sudo make install
@@ -226,9 +225,9 @@ Using the "terminal" application give the following commands (for the newest rel
 Using the "terminal" application give the following commands (for the newest release number of libtiff please reffer to http://download.osgeo.org/libtiff/):
 
     cd ~
-    wget https://download.osgeo.org/libtiff/tiff-4.7.0.tar.gz
-    tar xvzf tiff-4.7.0.tar.gz
-    cd tiff-4.7.0
+    wget https://download.osgeo.org/libtiff/tiff-4.7.2.tar.gz
+    tar xvzf tiff-4.7.2.tar.gz
+    cd tiff-4.7.2
     ./configure
     make -j$(nproc)
     sudo make install
@@ -239,9 +238,9 @@ Using the "terminal" application give the following commands (for the newest rel
 Using the "terminal" application give the following commands (for the newest release number of jpeg please reffer to https://www.ijg.org/files/):
 
     cd ~
-    wget https://www.ijg.org/files/jpegsrc.v9f.tar.gz
-    tar xvzf jpegsrc.v9f.tar.gz
-    cd jpeg-9f/
+    wget https://www.ijg.org/files/jpegsrc.v10.tar.gz
+    tar xvzf jpegsrc.v10.tar.gz
+    cd jpeg-10/
     ./configure
     make -j$(nproc)
     sudo make install
@@ -252,9 +251,9 @@ Using the "terminal" application give the following commands (for the newest rel
 Using the "terminal" application give the following commands (the latest release was year 2014, please check if any update here https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/):
 
     cd ~
-    wget https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.1.tar.gz
-    tar xvzf jbigkit-2.1.tar.gz
-    cd jbigkit-2.1
+    wget https://www.cl.cam.ac.uk/~mgk25/jbigkit/download/jbigkit-2.2.tar.gz
+    tar xvzf jbigkit-2.2.tar.gz
+    cd jbigkit-2.2
     make -j$(nproc)
 
 
@@ -283,14 +282,14 @@ So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` below, into 
 The full path `liblzma.a` for machine with Intel-family processor and 64bit OS Linux is `/usr/lib/x86_64-linux-gnu/liblzma.a`
 So please change `sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .` below, into `sudo cp /usr/lib/x86_64-linux-gnu/liblzma.a .`
 
-    sudo cp /usr/lib/arm-linux-gnueabihf/liblzma.a .
+    sudo cp /usr/lib/aarch64-linux-gnu/liblzma.a .
 
 Then continue doing this commands:
     
-    cp ~/jbigkit-2.1/libjbig/libjbig.a .
+    cp ~/jbigkit-2.2/libjbig/libjbig.a .
     export UserName=$(whoami)
     export UserGroup=$(id -g -n $UserName)
-    sudo chown -R $UserName.$UserGroup ~/jabcode
+    sudo chown -R $UserName:$UserGroup ~/jabcode
     cd ..
     make -j$(nproc)
     cd ../jabcodeWriter
